@@ -86,3 +86,9 @@ function determineResult(playerChoice, computerChoice) {
     endMessage.classList.add("game-message");
     document.getElementById("resultContainer").append(endMessage);
   }
+
+  function lockButtons() {
+    buttons.forEach((button) => {
+      button.disabled = true;
+    });
+  }
