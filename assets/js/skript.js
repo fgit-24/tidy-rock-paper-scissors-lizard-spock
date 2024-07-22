@@ -71,3 +71,10 @@ function determineResult(playerChoice, computerChoice) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+
+  function checkForGameOver() {
+    if (playerWins === 3 || computerWins === 3) {
+      lockButtons();
+      displayEndMessage(playerWins === 3 ? "🎉 VICTORY, you're cool! 🎉" : "💀 Try again! 🤝");
+    }
+  }
