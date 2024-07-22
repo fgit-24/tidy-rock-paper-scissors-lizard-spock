@@ -92,3 +92,16 @@ function determineResult(playerChoice, computerChoice) {
       button.disabled = true;
     });
   }
+
+  function handleButtonClick(event) {
+    const playerChoice = event.currentTarget.getAttribute("data-choice");
+    const computerChoice = getComputerChoice();
+    const result = determineResult(playerChoice, computerChoice);
+    updateScores(result);
+    updateDisplays(playerChoice, computerChoice, result);
+    checkForGameOver();
+  }
+  
+  buttons.forEach((button) => {
+    button.addEventListener("click", handleButtonClick);
+  });
