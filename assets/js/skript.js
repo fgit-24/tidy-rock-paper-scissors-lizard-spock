@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalComputerResult = document.getElementById("totalComputerResult");
   const buttons = document.querySelectorAll("#gameButtonContainer button");
   const newGame = document.getElementById("newGame");
+
+  function getComputerChoice() {
+    return choices[Math.floor(Math.random() * choices.length)];
+  }
