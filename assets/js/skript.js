@@ -15,3 +15,39 @@ document.addEventListener("DOMContentLoaded", function () {
   function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
   }
+
+  function determineResult(playerChoice, computerChoice) {
+  if (playerChoice === computerChoice) {
+    return "It's a tie!";
+  }
+
+  const winningConditions = {
+    rock: ["scissors", "lizard"],
+    paper: ["rock", "spock"],
+    scissors: ["paper", "lizard"],
+    lizard: ["paper", "spock"],
+    spock: ["rock", "scissors"],
+  };
+
+  return winningConditions[playerChoice].includes(computerChoice)
+    ? "You win!"
+    : "You lose!";
+}
+
+function determineResult(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+      return "It's a tie!";
+    }
+  
+    const winningConditions = {
+      rock: ["scissors", "lizard"],
+      paper: ["rock", "spock"],
+      scissors: ["paper", "lizard"],
+      lizard: ["paper", "spock"],
+      spock: ["rock", "scissors"],
+    };
+  
+    return winningConditions[playerChoice].includes(computerChoice)
+      ? "You win!"
+      : "You lose!";
+  }
