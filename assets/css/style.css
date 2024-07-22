@@ -249,3 +249,17 @@ footer {
 .social-link:hover {
     color: #66abff;
 }
+
+@media only screen and (min-width: 500px) {
+    #aboutContainer {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .game-message {
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+    }
+}
