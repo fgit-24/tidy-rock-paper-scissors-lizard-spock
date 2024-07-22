@@ -78,3 +78,28 @@ h3 {
 #about > p {
     text-align: justify;
 }
+
+#tableSection {
+    margin: 40px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: var(--bg-color);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
