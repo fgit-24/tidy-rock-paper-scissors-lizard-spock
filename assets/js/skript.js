@@ -67,3 +67,7 @@ function determineResult(playerChoice, computerChoice) {
     computerDisplay.textContent = `Computer: ${capitalizeFirstLetter(computerChoice)}`;
     resultDisplay.textContent = `Result: ${result}`;
   }
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
