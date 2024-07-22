@@ -61,3 +61,9 @@ function determineResult(playerChoice, computerChoice) {
       totalComputerResult.textContent = `Computer Total: ${computerWins}`;
     }
   }
+
+  function updateDisplays(playerChoice, computerChoice, result) {
+    playerDisplay.textContent = `Player: ${capitalizeFirstLetter(playerChoice)}`;
+    computerDisplay.textContent = `Computer: ${capitalizeFirstLetter(computerChoice)}`;
+    resultDisplay.textContent = `Result: ${result}`;
+  }
