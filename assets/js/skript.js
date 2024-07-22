@@ -105,3 +105,21 @@ function determineResult(playerChoice, computerChoice) {
   buttons.forEach((button) => {
     button.addEventListener("click", handleButtonClick);
   });
+
+  function resetGame() {
+    playerWins = 0;
+    computerWins = 0;
+    playerDisplay.textContent = "Player:";
+    computerDisplay.textContent = "Computer:";
+    totalPlayerResult.textContent = "Player Total:";
+    totalComputerResult.textContent = "Computer Total:";
+    resultDisplay.textContent = "Result:";
+    document.querySelectorAll(".game-message").forEach((message) => {
+      message.remove();
+    });
+    buttons.forEach((button) => {
+      button.disabled = false;
+    });
+  }
+  
+  newGame.addEventListener("click", resetGame);
