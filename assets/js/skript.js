@@ -51,3 +51,13 @@ function determineResult(playerChoice, computerChoice) {
       ? "You win!"
       : "You lose!";
   }
+
+  function updateScores(result) {
+    if (result === "You win!") {
+      playerWins++;
+      totalPlayerResult.textContent = `Player Total: ${playerWins}`;
+    } else if (result === "You lose!") {
+      computerWins++;
+      totalComputerResult.textContent = `Computer Total: ${computerWins}`;
+    }
+  }
