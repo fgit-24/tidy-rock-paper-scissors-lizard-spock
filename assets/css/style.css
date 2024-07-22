@@ -120,3 +120,62 @@ tr:nth-child(even) {
     flex-direction: column;
     gap: 8px;
 }
+
+#newBtnDiv {
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 92px;
+    margin-right: 10px;
+}
+
+#newGame {
+    display: inline-block;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    background-color: rgb(22, 129, 217);
+    color: var (--bg-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#newGame:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.game-message {
+    position: static;
+    margin-top: 46px;
+    align-self: center;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#gameSection {
+    min-height: calc(100vh - 60px);
+    margin: 40px auto;
+    padding-bottom: 60px;
+}
+
+#gameButtonContainer {
+    margin: 40px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.buttonImages {
+    border: none;
+    outline: none;
+    background: transparent;
+}
