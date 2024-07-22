@@ -179,3 +179,73 @@ tr:nth-child(even) {
     outline: none;
     background: transparent;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    background-color: #333;
+    color: var (--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footerNav {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footerNavList {
+    display: flex;
+}
+
+.footerNavList a {
+    color: var (--bg-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.footerNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#listFooterText {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#footerText {
+    padding-right: 10px;
+    text-align: justify;
+    align-self: flex-end;
+}
+
+.social-link {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#linkedinIcon {
+    align-self: center;
+}
+
+#snipverse {
+    margin-left: 10px;
+}
+
+.social-link:hover {
+    color: #66abff;
+}
