@@ -78,3 +78,11 @@ function determineResult(playerChoice, computerChoice) {
       displayEndMessage(playerWins === 3 ? "🎉 VICTORY, you're cool! 🎉" : "💀 Try again! 🤝");
     }
   }
+
+  function displayEndMessage(message) {
+    const endMessage = document.createElement("div");
+    endMessage.textContent = message;
+    endMessage.style.color = "white";
+    endMessage.classList.add("game-message");
+    document.getElementById("resultContainer").append(endMessage);
+  }
