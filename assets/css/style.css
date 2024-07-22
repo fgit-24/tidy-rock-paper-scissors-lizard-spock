@@ -46,3 +46,35 @@ h2 {
 h3 {
     margin: 20px auto;
 }
+
+#aboutSection {
+    margin: 40px auto;
+}
+
+#aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#callToAction {
+    padding: 10px;
+    text-align: center;
+    color: var(--ft-color);
+    margin-right: 20px;
+}
+
+#about {
+    padding: 10px;
+    color: var(--bg-color);
+}
+
+#about > h2 {
+    text-align: center;
+}
+
+#about > p {
+    text-align: justify;
+}
