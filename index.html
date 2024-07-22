@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A variant of the beloved 'Rock, Paper, Scissors'-Game">
+    <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Game">
+    <meta name="author" content="Florian">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
+    <title>Rock Paper Scissors Lizard Spock</title>
+</head>
+<body>
+    <header>
+        <section id="headerSection">
+            <div id="headerContainer">
+                <h1>
+                    Hi, random person on the internet! 🙋‍♂️
+                </h1>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="aboutSection">
+            <div id="aboutContainer">
+                <div>
+                    <h2 id="callToAction">
+                        Rock Paper Scissors Lizard Spock
+                    </h2>
+                </div>
+                <div id="about">
+                    <h2>
+                        About
+                    </h2>
+                    <p>
+                        Embark on an epic journey of wit and strategy with Rock, Paper, Scissors, Lizard, Spock—a game where ancient symbolism meets modern intelligence. <br><br>
+                        Navigate through the elemental forces of rock, the cunning of paper, the precision of scissors, the adaptability of lizard, and the logic of Spock. <br><br>
+                        Choose wisely, outwit your opponent, and embrace the thrill of mastering this beloved game of chance and strategy. <br><br>
+                        Let your decisions speak volumes as you engage in this timeless battle of intellect and intuition.<br><br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="tableSection">
+            <h2>
+                Rock Paper Scissors Lizard Spock Rules
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Move</th>
+                        <th>Beats</th>
+                        <th>Rule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rock</td>
+                        <td>Scissors, Lizard</td>
+                        <td>Rock crushes Scissors and crushes Lizard</td>
+                    </tr>
+                    <tr>
+                        <td>Paper</td>
+                        <td>Rock, Spock</td>
+                        <td>Paper covers Rock and disproves Spock</td>
+                    </tr>
+                    <tr>
+                        <td>Scissors</td>
+                        <td>Paper, Lizard</td>
+                        <td>Scissors cuts Paper and decapitates Lizard</td>
+                    </tr>
+                    <tr>
+                        <td>Lizard</td>
+                        <td>Paper, Spock</td>
+                        <td>Lizard eats Paper and poisons Spock</td>
+                    </tr>
+                    <tr>
+                        <td>Spock</td>
+                        <td>Rock, Scissors</td>
+                        <td>Spock vaporizes Rock and smashes Scissors</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="gameSection">
+            <div id='resultContainer'>
+                <div id="results">
+                    <div id="playerDisplay">
+                        Player: 
+                    </div>
+                    <div id="computerDisplay">
+                        Computer: 
+                    </div>
+                    <div id="resultDisplay">
+                        Result: 
+                    </div>
+                    <div id="totalPlayerResult">
+                        Player Total:
+                    </div>
+                    <div id="totalComputerResult">
+                        Computer Total:
+                    </div>
+                </div>
+                <div id="newBtnDiv">
+                    <button id="newGame" aria-label="new game">
+                        New Game
+                    </button>
+                </div>
+            </div>
+            <div id="gameButtonContainer">
+                <button data-choice="rock">
+                    <img src="assets/images/rock.png" class="buttonImages" alt="rock" aria-label="rock">
+                </button>
+                <button data-choice="paper">
+                    <img src="assets/images/paper.png" class="buttonImages" alt="paper" aria-label="paper">
+                </button>
+                <button data-choice="scissors">
+                    <img src="assets/images/scissors.png" class="buttonImages" alt="scissors" aria-label="scissors">
+                </button>
+                <button data-choice="lizard">
+                    <img src="assets/images/lizard.png" class="buttonImages" alt="lizard" aria-label="lizard">
+                </button>
+                <button data-choice="spock">
+                    <img src="assets/images/spock.png" class="buttonImages" alt="spock" aria-label="spock">
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerNav">
+            <ul class="footerNavList">
+                <li class="footerNavLinks">
+                    <a href="https://www.linkedin.com/in/-florian-haas-" target="_blank" aria-label="linkedin" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footerNavLinks" id="snipverseElement">
+                    <a href="https://snipverse.com/fhaas" target="_blank" class="social-link" id="snipverse">
+                        Snipverse
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerNavList">
+            <div id="listFooterText">
+                <p id="footerText">
+                    Made by Florian 🚀
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/c148ec9d3c.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
